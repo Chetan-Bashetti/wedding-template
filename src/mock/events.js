@@ -7,7 +7,7 @@ export const events = [
 	{
 		title: 'Haldi',
 		key: 'haldi',
-		desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore'
+		desc: 'Lorem ipsum dolor sit amet, '
 	},
 	{
 		title: 'Wedding Day',

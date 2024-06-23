@@ -3,13 +3,12 @@
 	padding: 0 6em;
 	flex-wrap: wrap;
 	flex-direction: row;
-	align-items: center;
 	justify-content: center;
 	padding-top: 4em;
 }
 
 .each-service {
-	max-width: 300px;
+	width: 300px;
 	margin: 1em;
 	padding: 36px;
 	border-width: 1px;
@@ -69,7 +68,7 @@
 		padding-top: 2em;
 	}
 	.each-service {
-		max-width: 100%;
+		width: 100%;
 		padding: 20px;
 		margin: 1em 0;
 	}

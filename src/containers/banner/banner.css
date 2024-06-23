@@ -1,0 +1,44 @@
+.banner-wrapper {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: 1s ease-in-out;
+}
+
+.banner-content {
+	display: flex;
+	flex-direction: column;
+	height: 860px;
+	margin: 0 6em;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.banner-title {
+	font-size: 3em;
+	font-weight: 900;
+	font-family: 'Playwrite SK', cursive;
+	text-align: center;
+}
+
+.banner-sub-title {
+	font-size: 1.5em;
+	font-weight: 600;
+	font-family: 'Playwrite SK', cursive;
+	text-align: center;
+}
+
+@media (max-width: 799px) {
+	.banner-content {
+		height: 660px;
+		padding: 0;
+	}
+	.banner-title {
+		font-size: 3em;
+		text-align: center;
+	}
+}

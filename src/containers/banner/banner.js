@@ -26,8 +26,6 @@ const Banner = () => {
 		};
 	}, []);
 
-	console.log(bgImage, 'bgImage');
-
 	return (
 		<div
 			className='banner-wrapper'

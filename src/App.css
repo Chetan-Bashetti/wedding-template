@@ -1,5 +1,6 @@
 :root {
-	--primary-bg: #d15689;
+	/* --primary-bg: #d15689; */
+	--primary-bg: rgb(204, 42, 108);
 	--secondary-color: black;
 }
 

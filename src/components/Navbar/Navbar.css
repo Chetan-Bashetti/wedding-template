@@ -5,9 +5,10 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	height: 50px;
-	/* background: var(--primary-bg); */
-	box-shadow: rgba(17, 12, 46, 0.15) 0px 9px 14px 0px;
 	z-index: 1;
+	position: fixed;
+	width: -webkit-fill-available;
+	transition: 0.3s ease-in-out;
 }
 
 .logo {

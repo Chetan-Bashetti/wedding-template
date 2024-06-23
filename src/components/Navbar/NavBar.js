@@ -8,12 +8,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
 import './Navbar.css';
-import { ContextHelth } from '../../containers';
 import { appName } from 'mock/details';
 
-const NavBar = () => {
-	const { frame } = React.useContext(ContextHelth);
+const fixedNavBarStyles = {
+	background: 'var(--primary-bg)'
+};
 
+const NavBar = () => {
 	const links = [
 		{ title: 'home', id: '#home', icon: <HomeIcon /> },
 		{ title: 'events', id: '#events', icon: <MiscellaneousServicesIcon /> },
@@ -22,15 +23,21 @@ const NavBar = () => {
 	];
 
 	const [isMenuOpen, setMenuOpen] = React.useState(false);
+	const [scrollHeight, setScrollHeight] = React.useState(0);
 
 	const toggleMenu = () => {
 		setMenuOpen(!isMenuOpen);
 	};
 
-	return (
-		<header style={{ boxShadow: frame === 1 ? 'none' : '' }}>
-			<div className='logo'>{appName}</div>
+	React.useEffect(() => {
+		console.log(window.scrollY);
 
+		window.addEventListener('scroll', (e) => setScrollHeight(window.scrollY));
+	}, []);
+
+	return (
+		<header style={scrollHeight > 820 ? fixedNavBarStyles : {}}>
+			<div className='logo'>{appName}</div>
 			<nav className={isMenuOpen ? 'open' : ''}>
 				{isMenuOpen ? <div className='logo-sm'>{appName}</div> : ''}
 				<ul>
